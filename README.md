@@ -1,6 +1,6 @@
 # cuuid
 
-Simple UUID generation and manipulation library for Python.
+Simple and efficient UUID implementation for Python with C backend.
 
 
 ### License
@@ -36,25 +36,13 @@ print(cuuid.UUID(random_str))
 ```
 
 
-
 ### Installation:
 
 ```bash
-pip install git+ssh://git@github.com/ckirua/cuuid-dev.git
+pip install git+ssh://git@github.com/ckirua/cuuid.git
 ```
 See Makefile for details or run `make` for a list of commands.
 
-#### Development
-Ignore requirements with `reqs=false`, install inplace with `dev=true`.
-
-```bash
-make pipeline dev=true reqs=true
-```
-
-#### Production
-```bash
-make pipeline dev=false reqs=true
-```
 
 ### Benchmarks
 
