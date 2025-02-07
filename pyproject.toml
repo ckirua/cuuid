@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 61.0", "wheel >= 0.40.0", "build >= 0.10.0", "cython >= 3.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cuuid"
+description = "A Cython implementation of the UUID standard"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+authors = [
+    { name="ckirua" }
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "cuuid.__about__.__version__"}
+
+[tool.setuptools]
+include-package-data = true
+packages = ["cuuid"]
+
+[tool.setuptools.cmdclass]
+build_py = "setuptools.command.build_py.build_py"
+build_ext = "setuptools.command.build_ext.build_ext"
