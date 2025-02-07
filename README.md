@@ -1,6 +1,6 @@
 # cuuid
 
-Fast UUID generation and manipulation library for Python.
+Simple UUID generation and manipulation library for Python.
 
 
 ### License
